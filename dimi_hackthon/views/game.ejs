@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset=”UTF-8″>
+    <title>scatch</title>
+  </head>
+  <body>
+
+    <div class="left">
+      <div class="lef">
+        <h2 class="l1">8/14</h2>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2">이우언도엉</button>
+        <button class="l2" onclick="socket.emit('start')">Start Game</button>
+     </div>
+     <div class="rig">
+       <div class="r1"></div>
+       <div class="r2">
+         <canvas class="tutorial" id="tutorial" width="640" height="480"></canvas>
+       </div>
+       <div class="r3">
+         <div class="r4">
+            <input type="text" name="input" id="chatio">
+         </div>
+         <div class="r5">
+           <input type="image" src="img/submit.jpg" alt="submit" onclick="var e = {}; e.keyCode = 13; addChat(e);">
+         </div>
+       </div>
+     </div>
+   </div>
+    <div class="right">
+      <h2 class="ri1" >채팅창</h2>
+      <div class="ri2" id="chat">
+
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
